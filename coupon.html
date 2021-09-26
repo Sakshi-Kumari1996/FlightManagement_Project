@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>coupon</title>
+	<style>
+		body
+		{
+			font-family: "Open Sans", Arial, sans-serif;
+			background-color: #82b1f8;
+		}
+		.coupon
+		{
+			
+			width: 80%;
+			margin: 0 auto;
+			max-width: 500px;
+			padding: 10px;
+			background-color: white;
+		}
+		.container
+		{
+			color:rgb(248, 14, 14) ;
+			font-size: 15px;
+
+		}
+		.code 
+		{
+			color: #245cb5;
+		}
+		.promo
+		{
+			background-color: #ccc;
+			padding: 3px;
+			font-weight: bold;
+			border-radius: 10px;
+
+		}
+		.expire
+		{
+			color: red;
+			font-weight: bold;
+		}
+		.copy
+		{
+			padding: 3px;
+		}
+		.main p
+		{
+			color: rgb(2, 128, 245);
+			font-size: 12px;
+		 
+		}
+	</style>
+</head>
+<body>
+	<div class="coupon">
+		<div class="container">
+			<marquee direction = "left"><b>Use this promo code you will get 30% discount.This Promo code will expire on 22 May 2022.</b></marquee>
+		
+		<img src="giphy.gif" alt="Avatar" style="width:100%;">
+		</div>
+		
+		<div class="sub">
+			<p class="code">Use Promo Code:</p>
+			<input class="promo" type="text" value="XAN62GR1" id="myInput">
+			<button class="copy" onclick="myFunction()">Copied</button>
+		</div>
+		<div class="main">
+		<center><h3>Terms & Conditions</h3></center>
+			<p>
+			  We recommend passenger to refer airlines terms and conditions before booking the ticket.All statutory taxes, surcharges and fees are to be paid by the passenger, as applicable on the date of travel<br>	
+			
+		</div>
+		<p></p>
+	
+	</div>
+
+	<script>
+		function myFunction() {
+		  var copyText = document.getElementById("myInput");
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999);
+		  navigator.clipboard.writeText(copyText.value);
+		  alert("Copied the text: " + copyText.value);
+		}
+	</script>
+	<br><center>
+	<a id="checkoutwithpaykun" href="#" data_href="https://sandbox.paykun.in/BMkhSfn" data_style_bg="#21bb94" data_style_text="#FFFFFF" data_text="Continue To Payment"></a><script type="text/javascript" src="https://cdn.paykun.com/assets/js/paykun-checkout-button.js"></script>
+    </center>
+</body>
+</html>
